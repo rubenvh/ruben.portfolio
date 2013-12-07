@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery-1.9.0.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="http://www.rubenvh.info/script/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style type='text/css'>
+BODY {color: #000000; background: #ffffff;
+          font-family: Courier New, sans-serif;
+          font-size: 12pt; margin: 8%; }
+H1       {color: #000000;}
+TABLE.images {text-align: center; margin-left: auto; margin-right: auto;}
+TABLE.menu {text-align: left; border-spacing: 0px; border-collapse:collapse; }
+TD       { color: #000000; padding: 1em}
+IMG.mini { border: 0px solid #000000; }
+a.gallery IMG { border: 1px solid #000000; }
+TABLE.menu td, TABLE.menu th { padding: 0 10px 0 0; }
+a, a:visited {color:blue;}   
+a:hover {color:purple;} 
+h2 { color: blue; }
+h2 a { text-decoration: none; color: blue; }
+h2 a:hover { color: purple; }
+</style>
+<title>ruben van havermaet /// portfolio</title></head><body><script>
+$(document).ready(function() {		
+	$('.gallery').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',				
+				closeBtn  : false,
+				arrows : false,
+				padding : 5,
+				nextClick : true,
+				helpers : {	
+					title : {
+						type : 'inside'
+					}					
+				},
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ':     ' + this.title : '');
+				}				
+			});
+  // Handler for .ready() called.
+});
+</script>
+<h1>ruben van havermaet /// portfolio</h1><h2>artist statement</h2><p><i><a href='index.html'>back</a></i><br /></p><div><p>Gewaarwordingen en kennis zijn altijd slechts geldig geweest binnen een bepaald tijdskader. Idee&euml;n spelen het spel duizenden jaren of tien minuten, waarna ze zich beschikbaar stellen herdacht te worden. In het huidige tijdperk worden kennis en ervaringen verpakt als informatie en gevaloriseerd op basis van hun onmiddellijkheid. Niet alleen individuele informatie maar ook reductionistische Mens-Mens relatiemodellen worden als koopwaar verhandeld. In deze context is elk streven dat pretendeert radicale antwoorden te vinden verdacht en loopt het gevaar kort te sluiten en tot een nerveuze stilstand/trilstand te komen.</p>
+<p>Mijn werk als kunstenaar ontstaat voortdurend vanuit deze spanning tussen het absolute en haar relativering. Dit maakt dat elk werk in de eerste plaats als een vraag te benaderen is: met het raster volg ik een zoektocht naar de mogelijkheid van openheid in het rigide; met mijn digitaal werk vraag ik me af of de deterministische wereld van computers en het machine-worden van haar gebruikers nog een uitweg laat; andere werken gaan over simulaties van het organische of over de kiem van het onbeheersbare groeien.</p>
+<p>Tot besluit verbeeld ik me een lijst te maken van alle vragen die me soms verhinderen concreet beeldend of ander werk te maken. In dit beeld zit ik aan een tafel en schrijf ik eindeloze reeksen vragen. En schrijf ik tot de confrontatie met de sterfelijkheid elk vragen onzinnig maakt.</p></div><table class='images'></table></body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery-1.9.0.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="http://www.rubenvh.info/script/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style type='text/css'>
+BODY {color: #000000; background: #ffffff;
+          font-family: Courier New, sans-serif;
+          font-size: 12pt; margin: 8%; }
+H1       {color: #000000;}
+TABLE.images {text-align: center; margin-left: auto; margin-right: auto;}
+TABLE.menu {text-align: left; border-spacing: 0px; border-collapse:collapse; }
+TD       { color: #000000; padding: 1em}
+IMG.mini { border: 0px solid #000000; }
+a.gallery IMG { border: 1px solid #000000; }
+TABLE.menu td, TABLE.menu th { padding: 0 10px 0 0; }
+a, a:visited {color:blue;}   
+a:hover {color:purple;} 
+h2 { color: blue; }
+h2 a { text-decoration: none; color: blue; }
+h2 a:hover { color: purple; }
+</style>
+<title>ruben van havermaet /// portfolio</title></head><body><script>
+$(document).ready(function() {		
+	$('.gallery').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',				
+				closeBtn  : false,
+				arrows : false,
+				padding : 5,
+				nextClick : true,
+				helpers : {	
+					title : {
+						type : 'inside'
+					}					
+				},
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ':     ' + this.title : '');
+				}				
+			});
+  // Handler for .ready() called.
+});
+</script>
+<h1>ruben van havermaet /// portfolio</h1><h2><a href='../../../../../index.html'></a>/<a href='../../../../index.html'>work</a>/<a href='../../../index.html'>2010-2011</a>/<a href='../../index.html'>algorithms & organisms</a>/<a href='../index.html'>recursive scanning</a>/<a href='#'>grid</a>/</h2><p><i><a href='../index.html'>back</a></i><br /><i>number of images</i>: 12<br/><hr /></p><table class='images'><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_000.jpg' title='grid_000'><img src='./thumbs/grid_000.jpg' width='150' height='150' alt='grid_000' /></a><div>grid_000</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_001.jpg' title='grid_001'><img src='./thumbs/grid_001.jpg' width='150' height='150' alt='grid_001' /></a><div>grid_001</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_002.jpg' title='grid_002'><img src='./thumbs/grid_002.jpg' width='150' height='150' alt='grid_002' /></a><div>grid_002</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_003.jpg' title='grid_003'><img src='./thumbs/grid_003.jpg' width='150' height='150' alt='grid_003' /></a><div>grid_003</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_004.jpg' title='grid_004'><img src='./thumbs/grid_004.jpg' width='150' height='150' alt='grid_004' /></a><div>grid_004</div></td></tr><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_005.jpg' title='grid_005'><img src='./thumbs/grid_005.jpg' width='150' height='150' alt='grid_005' /></a><div>grid_005</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_006.jpg' title='grid_006'><img src='./thumbs/grid_006.jpg' width='150' height='150' alt='grid_006' /></a><div>grid_006</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_007.jpg' title='grid_007'><img src='./thumbs/grid_007.jpg' width='150' height='150' alt='grid_007' /></a><div>grid_007</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_008.jpg' title='grid_008'><img src='./thumbs/grid_008.jpg' width='150' height='150' alt='grid_008' /></a><div>grid_008</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_009.jpg' title='grid_009'><img src='./thumbs/grid_009.jpg' width='150' height='150' alt='grid_009' /></a><div>grid_009</div></td></tr><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_010.jpg' title='grid_010'><img src='./thumbs/grid_010.jpg' width='150' height='150' alt='grid_010' /></a><div>grid_010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='grid_011.jpg' title='grid_011'><img src='./thumbs/grid_011.jpg' width='150' height='150' alt='grid_011' /></a><div>grid_011</div></td></tr></table></body>
+</html>

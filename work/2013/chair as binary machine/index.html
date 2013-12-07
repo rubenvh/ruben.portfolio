@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery-1.9.0.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="http://www.rubenvh.info/script/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style type='text/css'>
+BODY {color: #000000; background: #ffffff;
+          font-family: Courier New, sans-serif;
+          font-size: 12pt; margin: 8%; }
+H1       {color: #000000;}
+TABLE.images {text-align: center; margin-left: auto; margin-right: auto;}
+TABLE.menu {text-align: left; border-spacing: 0px; border-collapse:collapse; }
+TD       { color: #000000; padding: 1em}
+IMG.mini { border: 0px solid #000000; }
+a.gallery IMG { border: 1px solid #000000; }
+TABLE.menu td, TABLE.menu th { padding: 0 10px 0 0; }
+a, a:visited {color:blue;}   
+a:hover {color:purple;} 
+h2 { color: blue; }
+h2 a { text-decoration: none; color: blue; }
+h2 a:hover { color: purple; }
+</style>
+<title>ruben van havermaet /// portfolio</title></head><body><script>
+$(document).ready(function() {		
+	$('.gallery').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',				
+				closeBtn  : false,
+				arrows : false,
+				padding : 5,
+				nextClick : true,
+				helpers : {	
+					title : {
+						type : 'inside'
+					}					
+				},
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ':     ' + this.title : '');
+				}				
+			});
+  // Handler for .ready() called.
+});
+</script>
+<h1>ruben van havermaet /// portfolio</h1><h2><a href='../../../index.html'></a>/<a href='../../index.html'>work</a>/<a href='../index.html'>2013</a>/<a href='#'>chair as binary machine</a>/</h2><p><i><a href='../index.html'>back</a></i><br /><i>number of images</i>: 6<br/><hr /></p><table class='images'><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='01.png' title='01'><img src='./thumbs/01.png' width='150' height='150' alt='01' /></a><div>01</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='02.png' title='02'><img src='./thumbs/02.png' width='150' height='150' alt='02' /></a><div>02</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='03.png' title='03'><img src='./thumbs/03.png' width='150' height='150' alt='03' /></a><div>03</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='04.png' title='04'><img src='./thumbs/04.png' width='150' height='150' alt='04' /></a><div>04</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='05.png' title='05'><img src='./thumbs/05.png' width='150' height='150' alt='05' /></a><div>05</div></td></tr></table>						<div style="width: 900px; height: 450px; margin: 0 auto;">
+							<object width="900" height="450">
+								<param name="wmode" value="transparent">
+								<param name="allowfullscreen" value="true" />
+								<param name="allowscriptaccess" value="always" />
+								<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=60385673&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" />
+								<embed src="http://vimeo.com/moogaloop.swf?clip_id=60385673&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="900" height="450" wmode="transparent">
+								</embed>
+							</object>
+						</div>
+</body>
+</html>

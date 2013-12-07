@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery-1.9.0.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="http://www.rubenvh.info/script/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style type='text/css'>
+BODY {color: #000000; background: #ffffff;
+          font-family: Courier New, sans-serif;
+          font-size: 12pt; margin: 8%; }
+H1       {color: #000000;}
+TABLE.images {text-align: center; margin-left: auto; margin-right: auto;}
+TABLE.menu {text-align: left; border-spacing: 0px; border-collapse:collapse; }
+TD       { color: #000000; padding: 1em}
+IMG.mini { border: 0px solid #000000; }
+a.gallery IMG { border: 1px solid #000000; }
+TABLE.menu td, TABLE.menu th { padding: 0 10px 0 0; }
+a, a:visited {color:blue;}   
+a:hover {color:purple;} 
+h2 { color: blue; }
+h2 a { text-decoration: none; color: blue; }
+h2 a:hover { color: purple; }
+</style>
+<title>ruben van havermaet /// portfolio</title></head><body><script>
+$(document).ready(function() {		
+	$('.gallery').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',				
+				closeBtn  : false,
+				arrows : false,
+				padding : 5,
+				nextClick : true,
+				helpers : {	
+					title : {
+						type : 'inside'
+					}					
+				},
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ':     ' + this.title : '');
+				}				
+			});
+  // Handler for .ready() called.
+});
+</script>
+<h1>ruben van havermaet /// portfolio</h1><h2><a href='../../../../index.html'></a>/<a href='../../../index.html'>work</a>/<a href='../../index.html'>2009-2010</a>/<a href='../index.html'>mental drawing</a>/<a href='#'>book</a>/</h2><p><i><a href='../index.html'>back</a></i><br /><i>number of images</i>: 28<br/><hr /></p><i>attachments</i>:<br><a href='mentaldrawing_book.pdf'>mentaldrawing_book.pdf</a><br /><table class='images'><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='01 - 2010.png' title='01 - 2010'><img src='./thumbs/01 - 2010.png' width='150' height='150' alt='01 - 2010' /></a><div>01 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='02 - 2010.jpg' title='02 - 2010'><img src='./thumbs/02 - 2010.jpg' width='150' height='150' alt='02 - 2010' /></a><div>02 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='03 - 2010.jpg' title='03 - 2010'><img src='./thumbs/03 - 2010.jpg' width='150' height='150' alt='03 - 2010' /></a><div>03 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='04 - 2010.png' title='04 - 2010'><img src='./thumbs/04 - 2010.png' width='150' height='150' alt='04 - 2010' /></a><div>04 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='05 - 2010.png' title='05 - 2010'><img src='./thumbs/05 - 2010.png' width='150' height='150' alt='05 - 2010' /></a><div>05 - 2010</div></td></tr><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='06 - 2010.png' title='06 - 2010'><img src='./thumbs/06 - 2010.png' width='150' height='150' alt='06 - 2010' /></a><div>06 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='07 - 2010.png' title='07 - 2010'><img src='./thumbs/07 - 2010.png' width='150' height='150' alt='07 - 2010' /></a><div>07 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='08 - 2010.png' title='08 - 2010'><img src='./thumbs/08 - 2010.png' width='150' height='150' alt='08 - 2010' /></a><div>08 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='09 - 2010.png' title='09 - 2010'><img src='./thumbs/09 - 2010.png' width='150' height='150' alt='09 - 2010' /></a><div>09 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='10 - 2010.png' title='10 - 2010'><img src='./thumbs/10 - 2010.png' width='150' height='150' alt='10 - 2010' /></a><div>10 - 2010</div></td></tr><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='11 - 2010.png' title='11 - 2010'><img src='./thumbs/11 - 2010.png' width='150' height='150' alt='11 - 2010' /></a><div>11 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='12 - 2010.png' title='12 - 2010'><img src='./thumbs/12 - 2010.png' width='150' height='150' alt='12 - 2010' /></a><div>12 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='13 - 2010.png' title='13 - 2010'><img src='./thumbs/13 - 2010.png' width='150' height='150' alt='13 - 2010' /></a><div>13 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='14 - 2010.png' title='14 - 2010'><img src='./thumbs/14 - 2010.png' width='150' height='150' alt='14 - 2010' /></a><div>14 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='15 - 2010.png' title='15 - 2010'><img src='./thumbs/15 - 2010.png' width='150' height='150' alt='15 - 2010' /></a><div>15 - 2010</div></td></tr><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='16 - 2010.png' title='16 - 2010'><img src='./thumbs/16 - 2010.png' width='150' height='150' alt='16 - 2010' /></a><div>16 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='17 - 2010.png' title='17 - 2010'><img src='./thumbs/17 - 2010.png' width='150' height='150' alt='17 - 2010' /></a><div>17 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='18 - 2010.png' title='18 - 2010'><img src='./thumbs/18 - 2010.png' width='150' height='150' alt='18 - 2010' /></a><div>18 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='19 - 2010.png' title='19 - 2010'><img src='./thumbs/19 - 2010.png' width='150' height='150' alt='19 - 2010' /></a><div>19 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='20 - 2010.png' title='20 - 2010'><img src='./thumbs/20 - 2010.png' width='150' height='150' alt='20 - 2010' /></a><div>20 - 2010</div></td></tr><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='21 - 2010.png' title='21 - 2010'><img src='./thumbs/21 - 2010.png' width='150' height='150' alt='21 - 2010' /></a><div>21 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='22 - 2010.png' title='22 - 2010'><img src='./thumbs/22 - 2010.png' width='150' height='150' alt='22 - 2010' /></a><div>22 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='23 - 2010.png' title='23 - 2010'><img src='./thumbs/23 - 2010.png' width='150' height='150' alt='23 - 2010' /></a><div>23 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='24 - 2010.png' title='24 - 2010'><img src='./thumbs/24 - 2010.png' width='150' height='150' alt='24 - 2010' /></a><div>24 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='25 - 2010.png' title='25 - 2010'><img src='./thumbs/25 - 2010.png' width='150' height='150' alt='25 - 2010' /></a><div>25 - 2010</div></td></tr><tr><td align='center'><a class='gallery' data-fancybox-group='gallery' href='26 - 2010.png' title='26 - 2010'><img src='./thumbs/26 - 2010.png' width='150' height='150' alt='26 - 2010' /></a><div>26 - 2010</div></td><td align='center'><a class='gallery' data-fancybox-group='gallery' href='27 - 2010.png' title='27 - 2010'><img src='./thumbs/27 - 2010.png' width='150' height='150' alt='27 - 2010' /></a><div>27 - 2010</div></td></tr></table></body>
+</html>
