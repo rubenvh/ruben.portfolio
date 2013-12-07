@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery-1.9.0.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="http://www.rubenvh.info/script/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style type='text/css'>
+BODY {color: #000000; background: #ffffff;
+          font-family: Courier New, sans-serif;
+          font-size: 12pt; margin: 8%; }
+H1       {color: #000000;}
+TABLE.images {text-align: center; margin-left: auto; margin-right: auto;}
+TABLE.menu {text-align: left; border-spacing: 0px; border-collapse:collapse; }
+TD       { color: #000000; padding: 1em}
+IMG.mini { border: 0px solid #000000; }
+a.gallery IMG { border: 1px solid #000000; }
+TABLE.menu td, TABLE.menu th { padding: 0 10px 0 0; }
+a, a:visited {color:blue;}   
+a:hover {color:purple;} 
+h2 { color: blue; }
+h2 a { text-decoration: none; color: blue; }
+h2 a:hover { color: purple; }
+</style>
+<title>
