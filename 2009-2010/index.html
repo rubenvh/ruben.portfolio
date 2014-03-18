@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery-1.9.0.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="http://www.rubenvh.info/script/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="http://www.rubenvh.info/script/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<style type='text/css'>
+BODY {color: #000000; background: #ffffff;
+          font-family: Courier New, sans-serif;
+          font-size: 12pt; margin: 8%; }
+H1       {color: #000000;}
+TABLE.images {text-align: center; margin-left: auto; margin-right: auto;}
+TABLE.menu {text-align: left; border-spacing: 0px; border-collapse:collapse; }
+TD       { color: #000000; padding: 1em}
+IMG.mini { border: 0px solid #000000; }
+a.gallery IMG { border: 1px solid #000000; }
+TABLE.menu td, TABLE.menu th { padding: 0 10px 0 0; }
+a, a:visited {color:blue;}   
+a:hover {color:purple;} 
+h2 { color: blue; }
+h2 a { text-decoration: none; color: blue; }
+h2 a:hover { color: purple; }
+</style>
+<title>ruben van havermaet / portfolio</title></head><body><script>
+$(document).ready(function() {		
+	$('.gallery').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',				
+				closeBtn  : false,
+				arrows : false,
+				padding : 5,
+				nextClick : true,
+				helpers : {	
+					title : {
+						type : 'inside'
+					}					
+				},
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ':     ' + this.title : '');
+				}				
+			});
+  // Handler for .ready() called.
+});
+</script>
+<h1>ruben van havermaet / portfolio</h1><h2><a href='../index.html'>home</a>/<a href='#'>2009-2010</a>/</h2><p><i><a href='../index.html'>back</a></i><br /><hr /></p><table class='menu'><tr><td class='menuImage'><img class='mini' src='15 hours/thumbs/15 hours - 04 - 2010.jpg' width='100'/></td><td><a href='15 hours/index.html'>15 hours</a></td><td class='menuImage'><img class='mini' src='cardboard box sculptures/thumbs/cardboard balance 1 - 2009.jpg' width='100'/></td><td><a href='cardboard box sculptures/index.html'>cardboard box sculptures</a></td></tr><tr><td class='menuImage'><img class='mini' src='cleaning a patch of grass/thumbs/cleaning a patch of grass (videostill).jpg' width='100'/></td><td><a href='cleaning a patch of grass/index.html'>cleaning a patch of grass</a></td><td class='menuImage'><img class='mini' src='mental drawing/book/thumbs/15 - 2010.png' width='100'/></td><td><a href='mental drawing/index.html'>mental drawing</a></td></tr><tr><td class='menuImage'><img class='mini' src='moving boxes/thumbs/02 - 2010.jpg' width='100'/></td><td><a href='moving boxes/index.html'>moving boxes</a></td><td class='menuImage'><img class='mini' src='water - heat - steam/thumbs/videostill.jpg' width='100'/></td><td><a href='water - heat - steam/index.html'>water - heat - steam</a></td></tr></table><hr /><table class='images'></table><i><a href='../index.html'>back</a></i><br /></body>
+</html>
